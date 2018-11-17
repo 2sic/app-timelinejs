@@ -49,8 +49,7 @@ $(function () {
         var isEditMode = $2sxc(moduleId).isEditMode();
 
         if (isEditMode) {
-            // var listToolbar = $2sxc(moduleId).manage.getToolbar({ "entity": listContent, "action": "edit" });
-            var listToolbar = $2sxc(moduleId).manage.getToolbar({"action":"edit","sortOrder":-1,"useModuleList":true});
+            var listToolbar = $2sxc(moduleId).manage.getToolbar({ "entity": listContent, "action": "edit" });
             listContent.Text += listToolbar;
         }
 
@@ -60,13 +59,10 @@ $(function () {
                 "type": "default",
                 "text": listContent.Text,
                 "startDate": FormatDate(listContent.StartDate),
-                "date": $.map(content, function (entry, index) {
+                "date": $.map(content, function (entry) {
+
                     if (isEditMode) {
-                        // var toolbar = $2sxc(moduleId).manage.getToolbar([{ "entity": entry, "action": "edit" }, { "entity": entry, "action": "new" }]);
-                        var toolbar = $2sxc(moduleId).manage.getToolbar([
-                          {"action":"edit", "sortOrder":index, "useModuleList":true},
-                          {"action":"new", "sortOrder":index, "useModuleList":true}
-                        ]);
+                        var toolbar = $2sxc(moduleId).manage.getToolbar([{ "entity": entry, "action": "edit" }, { "entity": entry, "action": "new" }]);
                         entry.Body += toolbar;
                     }
 

@@ -870,8 +870,8 @@ if(typeof VMM != 'undefined') {
 				_att = {opacity: 0}
 			}
 			
-			
-			if (VMM.Browser.device == "mobile" || VMM.Browser.device == "tablet") {
+			// HACK: sip & stv
+			if (VMM.Browser.device == "mobile" || VMM.Browser.device == "tablet" || VMM.Browser.device == "desktop") {
 				
 				var _tdd		= Math.round((_duration/1500)*10)/10,
 					__duration	= _tdd + 's';

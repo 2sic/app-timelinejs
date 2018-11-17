@@ -37,7 +37,9 @@ $(function () {
             source: timelineData,
             embed_id: timeLineElement.attr("id"),
             start_at_slide: listContent.StartAtSlide,
-            start_zoom_adjust: listContent.StartZoomAdjust
+            start_zoom_adjust: listContent.StartZoomAdjust,
+            js: 'timeline.js', // path to local timeline.js with DNN v9.2.2 compatibility hotfix
+            debug: true, // have to enable debug to not use default timeline-min.js
         });
 
     }

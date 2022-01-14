@@ -1,0 +1,31 @@
+{
+  "name": "app-timelinejs",
+  "version": "02.00.00",
+  "description": "A simple timeline",
+  "main": "(none)",
+  "scripts": {
+    "build-bs4": "webpack"
+  },
+  "author": "2sic internet solutions 2022",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/timelinejs": "0.0.28",
+    "autoprefixer": "^10.2.5",
+    "css-loader": "^5.2.7",
+    "file-loader": "^6.2.0",
+    "friendly-errors-webpack-plugin": "^1.7.0",
+    "less": "^3.11.3",
+    "less-loader": "^6.1.1",
+    "mini-css-extract-plugin": "^1.6.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.4",
+    "postcss-loader": "^5.2.0",
+    "style-loader": "^3.3.1",
+    "terser-webpack-plugin": "^5.1.1",
+    "webpack": "^5.36.2",
+    "webpack-cli": "^4.6.0",
+    "webpackbar": "^4.0.0"
+  },
+  "dependencies": {
+    "@knight-lab/timelinejs": "^3.8.19"
+  }
+}

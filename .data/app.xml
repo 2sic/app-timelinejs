@@ -1,99 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.00.00" ModuleVersion="10.26.01" ExportDate="2020-03-20T18:23:49.3213659+01:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="13.00.01" ExportDate="2022-01-17T09:27:30.0010925+01:00">
   <Header>
-    <App Guid="58c02a22-9e89-42c0-a2d7-7cd8db105de5" />
-    <Language Default="en-US" />
+    <App Guid="5ec60d62-9ff6-4850-a9fe-e196fefe2a25" />
+    <Language Default="en-us" />
     <Dimensions />
   </Header>
   <AttributeSets>
-    <AttributeSet StaticName="App-Resources" Name="App-Resources" Description="Stores resources like translations for an app" Scope="2SexyContent-App" AlwaysShareConfiguration="false">
+    <AttributeSet StaticName="App-Resources" Name="App-Resources" Description="Stores resources like translations for an app" Scope="System.App" AlwaysShareConfiguration="false">
       <Attributes />
     </AttributeSet>
-    <AttributeSet StaticName="App-Settings" Name="App-Settings" Description="Stores settings for an app" Scope="2SexyContent-App" AlwaysShareConfiguration="false">
+    <AttributeSet StaticName="App-Settings" Name="App-Settings" Description="Stores settings for an app" Scope="System.App" AlwaysShareConfiguration="false">
       <Attributes />
     </AttributeSet>
-    <AttributeSet StaticName="06ba7809-5669-41b9-966b-3623127f6952" Name="Timeline Entry" Description="Timeline Entry" Scope="2SexyContent" AlwaysShareConfiguration="false">
+    <AttributeSet StaticName="c91b95cb-8001-4f51-a73d-e9b83a3c2669" Name="Timeline Settings" Description="Timeline List Settings" Scope="Default" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="Headline" Type="String" IsTitle="true">
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="31c9a48f-4991-4b6e-b4c3-92046c36c29f" KeyNumber="593">
-            <Value Key="DefaultValue" Value="" Type="String" />
-            <Value Key="InputType" Value="" Type="String" />
-            <Value Key="Name" Value="Headline" Type="String" />
-            <Value Key="Notes" Value="" Type="String" />
-            <Value Key="Required" Value="True" Type="Boolean" />
-            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
-          </Entity>
-        </Attribute>
-        <Attribute StaticName="StartDate" Type="DateTime" IsTitle="false">
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="4174895e-8262-454d-96a5-7657d32ff69f" KeyNumber="594">
-            <Value Key="DefaultValue" Value="" Type="String" />
-            <Value Key="InputType" Value="" Type="String" />
-            <Value Key="Name" Value="StartDate" Type="String" />
-            <Value Key="Notes" Value="" Type="String" />
-            <Value Key="Required" Value="True" Type="Boolean" />
-            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
-          </Entity>
-        </Attribute>
-        <Attribute StaticName="EndDate" Type="DateTime" IsTitle="false">
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="06a24535-e83a-498a-ba08-8940a9816caf" KeyNumber="595">
-            <Value Key="DefaultValue" Value="" Type="String" />
-            <Value Key="InputType" Value="" Type="String" />
-            <Value Key="Name" Value="EndDate" Type="String" />
-            <Value Key="Notes" Value="" Type="String" />
-            <Value Key="Required" Value="True" Type="Boolean" />
-            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
-          </Entity>
-        </Attribute>
-        <Attribute StaticName="Body" Type="String" IsTitle="false">
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="1c8e15a6-b060-40c9-a7c8-aed29f2c641d" KeyNumber="596">
-            <Value Key="InputType" Value="" Type="String" />
-            <Value Key="Name" Value="Body" Type="String" />
-            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
-          </Entity>
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="3616ddfa-914f-48f9-af22-2d60e94a2847" KeyNumber="596">
-            <Value Key="DropdownValues" Value="" Type="String" />
-            <Value Key="InputType" Value="wysiwyg" Type="String" />
-            <Value Key="RowCount" Value="1" Type="Number" />
-          </Entity>
-        </Attribute>
-        <Attribute StaticName="Media" Type="Hyperlink" IsTitle="false">
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="a8915c7d-4ac3-409a-8b23-5951762872ea" KeyNumber="597">
-            <Value Key="DefaultValue" Value="http://2sxc.org/" Type="String" />
-            <Value Key="InputType" Value="" Type="String" />
-            <Value Key="Name" Value="Media" Type="String" />
-            <Value Key="Notes" Value="&lt;p&gt;Link to an image, a web site, a video or almost anything you can think of. TimelineJS will create a cool preview for you.&amp;nbsp;&lt;/p&gt;" Type="String" />
-            <Value Key="Required" Value="True" Type="Boolean" />
-            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
-          </Entity>
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Hyperlink" AttributeSetName="@Hyperlink" EntityGUID="91763ae2-2040-47f8-9b88-6f1410f81236" KeyNumber="597">
-            <Value Key="DefaultDialog" Value="ImageManager" Type="String" />
-            <Value Key="FileFilter" Value="" Type="String" />
-            <Value Key="Paths" Value="" Type="String" />
-            <Value Key="ShowFileManager" Value="False" Type="Boolean" />
-            <Value Key="ShowImageManager" Value="True" Type="Boolean" />
-            <Value Key="ShowPagePicker" Value="False" Type="Boolean" />
-          </Entity>
-        </Attribute>
-        <Attribute StaticName="MediaCredit" Type="String" IsTitle="false">
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="9187dced-2cd1-479d-8c09-ced0ab6f9357" KeyNumber="598">
-            <Value Key="InputType" Value="" Type="String" />
-            <Value Key="Name" Value="MediaCredit" Type="String" />
-            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
-          </Entity>
-        </Attribute>
-        <Attribute StaticName="MediaCaption" Type="String" IsTitle="false">
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="8dbd7721-9a3d-4447-9e36-e9ac7fcca4f2" KeyNumber="599">
-            <Value Key="InputType" Value="" Type="String" />
-            <Value Key="Name" Value="MediaCaption" Type="String" />
-            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
-          </Entity>
-        </Attribute>
-      </Attributes>
-    </AttributeSet>
-    <AttributeSet StaticName="c91b95cb-8001-4f51-a73d-e9b83a3c2669" Name="Timeline Settings" Description="Timeline List Settings" Scope="2SexyContent" AlwaysShareConfiguration="false">
-      <Attributes>
-        <Attribute StaticName="Headline" Type="String" IsTitle="true">
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="51dda8a4-5d39-4253-8726-756594ec9045" KeyNumber="600">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="51dda8a4-5d39-4253-8726-756594ec9045" Json="True" KeyNumber="600">
             <Value Key="DefaultValue" Value="" Type="String" />
             <Value Key="InputType" Value="" Type="String" />
             <Value Key="Name" Value="Headline" Type="String" />
@@ -103,19 +25,19 @@
           </Entity>
         </Attribute>
         <Attribute StaticName="Text" Type="String" IsTitle="false">
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="58108187-3275-4594-8fe5-b1ed63515f54" KeyNumber="601">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="58108187-3275-4594-8fe5-b1ed63515f54" Json="True" KeyNumber="601">
             <Value Key="InputType" Value="" Type="String" />
             <Value Key="Name" Value="Text" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
           </Entity>
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="615e4350-450c-4fd9-9e16-a48d58eb821a" KeyNumber="601">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="615e4350-450c-4fd9-9e16-a48d58eb821a" Json="True" KeyNumber="601">
             <Value Key="DropdownValues" Value="" Type="String" />
             <Value Key="InputType" Value="wysiwyg" Type="String" />
             <Value Key="RowCount" Value="1" Type="Number" />
           </Entity>
         </Attribute>
         <Attribute StaticName="StartDate" Type="DateTime" IsTitle="false">
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="7568c91a-d61f-4141-a44e-2b929e80c173" KeyNumber="602">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="7568c91a-d61f-4141-a44e-2b929e80c173" Json="True" KeyNumber="602">
             <Value Key="DefaultValue" Value="" Type="String" />
             <Value Key="InputType" Value="" Type="String" />
             <Value Key="Name" Value="StartDate" Type="String" />
@@ -125,7 +47,7 @@
           </Entity>
         </Attribute>
         <Attribute StaticName="StartAtSlide" Type="Number" IsTitle="false">
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="b5e89155-05bc-40da-bbda-ab636a3f1ff9" KeyNumber="603">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="b5e89155-05bc-40da-bbda-ab636a3f1ff9" Json="True" KeyNumber="603">
             <Value Key="DefaultValue" Value="0" Type="String" />
             <Value Key="InputType" Value="" Type="String" />
             <Value Key="Name" Value="StartAtSlide" Type="String" />
@@ -135,7 +57,7 @@
           </Entity>
         </Attribute>
         <Attribute StaticName="StartZoomAdjust" Type="Number" IsTitle="false">
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="630d3006-7984-4397-be4d-606bb055ff2b" KeyNumber="604">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="630d3006-7984-4397-be4d-606bb055ff2b" Json="True" KeyNumber="604">
             <Value Key="DefaultValue" Value="2" Type="String" />
             <Value Key="InputType" Value="" Type="String" />
             <Value Key="Name" Value="StartZoomAdjust" Type="String" />
@@ -146,24 +68,103 @@
         </Attribute>
       </Attributes>
     </AttributeSet>
+    <AttributeSet StaticName="06ba7809-5669-41b9-966b-3623127f6952" Name="TimelineEntry" Description="Timeline Entry" Scope="Default" AlwaysShareConfiguration="false">
+      <Attributes>
+        <Attribute StaticName="Headline" Type="String" IsTitle="true">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="31c9a48f-4991-4b6e-b4c3-92046c36c29f" Json="True" KeyNumber="593">
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+            <Value Key="Name" Value="Headline" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Required" Value="True" Type="Boolean" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="StartDate" Type="DateTime" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="4174895e-8262-454d-96a5-7657d32ff69f" Json="True" KeyNumber="594">
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+            <Value Key="Name" Value="StartDate" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Required" Value="True" Type="Boolean" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="EndDate" Type="DateTime" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="06a24535-e83a-498a-ba08-8940a9816caf" Json="True" KeyNumber="595">
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+            <Value Key="Name" Value="EndDate" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Required" Value="True" Type="Boolean" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="Body" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="1c8e15a6-b060-40c9-a7c8-aed29f2c641d" Json="True" KeyNumber="596">
+            <Value Key="InputType" Value="" Type="String" />
+            <Value Key="Name" Value="Body" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="3616ddfa-914f-48f9-af22-2d60e94a2847" Json="True" KeyNumber="596">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="wysiwyg" Type="String" />
+            <Value Key="RowCount" Value="1" Type="Number" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="Media" Type="Hyperlink" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="a8915c7d-4ac3-409a-8b23-5951762872ea" Json="True" KeyNumber="597">
+            <Value Key="DefaultValue" Value="http://2sxc.org/" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+            <Value Key="Name" Value="Media" Type="String" />
+            <Value Key="Notes" Value="&lt;p&gt;Link to an image, a web site, a video or almost anything you can think of. TimelineJS will create a cool preview for you.&amp;nbsp;&lt;/p&gt;" Type="String" />
+            <Value Key="Required" Value="True" Type="Boolean" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Hyperlink" AttributeSetName="@Hyperlink" EntityGUID="91763ae2-2040-47f8-9b88-6f1410f81236" Json="True" KeyNumber="597">
+            <Value Key="DefaultDialog" Value="ImageManager" Type="String" />
+            <Value Key="FileFilter" Value="" Type="String" />
+            <Value Key="Paths" Value="" Type="String" />
+            <Value Key="ShowFileManager" Value="False" Type="Boolean" />
+            <Value Key="ShowImageManager" Value="True" Type="Boolean" />
+            <Value Key="ShowPagePicker" Value="False" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="MediaCredit" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="9187dced-2cd1-479d-8c09-ced0ab6f9357" Json="True" KeyNumber="598">
+            <Value Key="InputType" Value="" Type="String" />
+            <Value Key="Name" Value="MediaCredit" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="MediaCaption" Type="String" IsTitle="false">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="8dbd7721-9a3d-4447-9e36-e9ac7fcca4f2" Json="True" KeyNumber="599">
+            <Value Key="InputType" Value="" Type="String" />
+            <Value Key="Name" Value="MediaCaption" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+      </Attributes>
+    </AttributeSet>
   </AttributeSets>
   <Entities>
-    <Entity AssignmentObjectType="App" AttributeSetStaticName="2SexyContent-App" AttributeSetName="2SexyContent-App" EntityGUID="df41031f-c359-40ed-9cad-fe0f85a1f546" KeyNumber="24">
+    <Entity AssignmentObjectType="App" AttributeSetStaticName="2SexyContent-App" AttributeSetName="2SexyContent-App" EntityGUID="df41031f-c359-40ed-9cad-fe0f85a1f546" Json="True" KeyNumber="24">
       <Value Key="AllowRazorTemplates" Value="True" Type="Boolean" />
       <Value Key="AllowTokenTemplates" Value="False" Type="Boolean" />
       <Value Key="Description" Value="A timeline App for creating nice timelines. It's basically a DNN-wrapper for the awesome TimelineJS" Type="String" />
       <Value Key="DisplayName" Value="TimelineJS" Type="String" />
-      <Value Key="Folder" Value="TimelineJS" Type="String" />
+      <Value Key="Folder" Value="TimelineJs2" Type="String" />
       <Value Key="Hidden" Value="False" Type="Boolean" />
-      <Value Key="OriginalId" Value="58c02a22-9e89-42c0-a2d7-7cd8db105de5" Type="String" />
-      <Value Key="RequiredDnnVersion" Value="07.02.00" Type="String" />
-      <Value Key="RequiredVersion" Value="08.03.00" Type="String" />
-      <Value Key="SupportsAjaxReload" Value="False" Type="Boolean" />
-      <Value Key="Version" Value="01.09.00" Type="String" />
+      <Value Key="OriginalId" Value="" Type="String" />
+      <Value Key="RequiredDnnVersion" Value="07.04.02" Type="String" />
+      <Value Key="RequiredOqtaneVersion" Value="02.02.00" Type="String" />
+      <Value Key="RequiredVersion" Value="12.05.00" Type="String" />
+      <Value Key="SupportsAjaxReload" Value="True" Type="Boolean" />
+      <Value Key="Version" Value="02.00.00" Type="String" />
     </Entity>
     <Entity AssignmentObjectType="App" AttributeSetStaticName="App-Settings" AttributeSetName="App-Settings" EntityGUID="c45c4651-96d9-4717-9f2b-5892994a6279" KeyNumber="24" />
     <Entity AssignmentObjectType="App" AttributeSetStaticName="App-Resources" AttributeSetName="App-Resources" EntityGUID="d4798585-e2bd-4f54-960f-7ce4b8057298" KeyNumber="24" />
-    <Entity AssignmentObjectType="Default" AttributeSetStaticName="06ba7809-5669-41b9-966b-3623127f6952" AttributeSetName="Timeline Entry" EntityGUID="f5b2a532-fa2d-4e0d-9e9b-75101f3567d5">
+    <Entity AssignmentObjectType="Default" AttributeSetStaticName="06ba7809-5669-41b9-966b-3623127f6952" AttributeSetName="TimelineEntry" EntityGUID="f5b2a532-fa2d-4e0d-9e9b-75101f3567d5">
       <Value Key="Body" Value="Body" Type="String" />
       <Value Key="EndDate" Value="2014-05-15T00:00:00" Type="DateTime" />
       <Value Key="Headline" Value="New Timeline Entry" Type="String" />
@@ -182,7 +183,7 @@
       <Value Key="StartDate" Value="2014-05-11T00:00:00" Type="DateTime" />
       <Value Key="Text" Value="Our &lt;strong&gt;history&lt;/strong&gt;" Type="String" />
     </Entity>
-    <Entity AssignmentObjectType="Default" AttributeSetStaticName="06ba7809-5669-41b9-966b-3623127f6952" AttributeSetName="Timeline Entry" EntityGUID="eb92b706-9002-4fbe-bfe6-01d9738ea2b7">
+    <Entity AssignmentObjectType="Default" AttributeSetStaticName="06ba7809-5669-41b9-966b-3623127f6952" AttributeSetName="TimelineEntry" EntityGUID="eb92b706-9002-4fbe-bfe6-01d9738ea2b7">
       <Value Key="Body" Value="&lt;p&gt;something happened!&lt;/p&gt;" Type="String" />
       <Value Key="EndDate" Value="2014-05-19T00:00:00" Type="DateTime" />
       <Value Key="Headline" Value="test daniel" Type="String" />
@@ -191,7 +192,7 @@
       <Value Key="MediaCredit" Value="2sic" Type="String" />
       <Value Key="StartDate" Value="2014-05-18T00:00:00" Type="DateTime" />
     </Entity>
-    <Entity AssignmentObjectType="Default" AttributeSetStaticName="06ba7809-5669-41b9-966b-3623127f6952" AttributeSetName="Timeline Entry" EntityGUID="557676e8-53ec-43de-8f91-6ba3c8da530e">
+    <Entity AssignmentObjectType="Default" AttributeSetStaticName="06ba7809-5669-41b9-966b-3623127f6952" AttributeSetName="TimelineEntry" EntityGUID="557676e8-53ec-43de-8f91-6ba3c8da530e">
       <Value Key="Body" Value="2SexyContent 06.00.06 released" Type="String" />
       <Value Key="EndDate" Value="2014-05-16T00:00:00" Type="DateTime" />
       <Value Key="Headline" Value="2SexyContent 06.00.07 released" Type="String" />
@@ -200,7 +201,7 @@
       <Value Key="MediaCredit" Value="© Microsoft" Type="String" />
       <Value Key="StartDate" Value="2014-05-16T00:00:00" Type="DateTime" />
     </Entity>
-    <Entity AssignmentObjectType="Default" AttributeSetStaticName="06ba7809-5669-41b9-966b-3623127f6952" AttributeSetName="Timeline Entry" EntityGUID="450042f8-1e62-4ba9-a9f8-8792b77f6f92">
+    <Entity AssignmentObjectType="Default" AttributeSetStaticName="06ba7809-5669-41b9-966b-3623127f6952" AttributeSetName="TimelineEntry" EntityGUID="450042f8-1e62-4ba9-a9f8-8792b77f6f92">
       <Value Key="Body" Value="DotNetNuke on Wikipedia" Type="String" />
       <Value Key="EndDate" Value="2014-05-26T00:00:00" Type="DateTime" />
       <Value Key="Headline" Value="DotNetNuke" Type="String" />
@@ -209,7 +210,7 @@
       <Value Key="MediaCredit" Value="" Type="String" />
       <Value Key="StartDate" Value="2014-05-23T00:00:00" Type="DateTime" />
     </Entity>
-    <Entity AssignmentObjectType="Default" AttributeSetStaticName="06ba7809-5669-41b9-966b-3623127f6952" AttributeSetName="Timeline Entry" EntityGUID="88d19b4b-a16b-4a4d-b9d4-6cd2b3d5d21c">
+    <Entity AssignmentObjectType="Default" AttributeSetStaticName="06ba7809-5669-41b9-966b-3623127f6952" AttributeSetName="TimelineEntry" EntityGUID="88d19b4b-a16b-4a4d-b9d4-6cd2b3d5d21c">
       <Value Key="Body" Value="&lt;p&gt;New 2SexyContent version!&lt;/p&gt;" Type="String" />
       <Value Key="EndDate" Value="2014-05-23T00:00:00" Type="DateTime" />
       <Value Key="Headline" Value="Test new Timeline Entry 16:39 2rm" Type="String" />
@@ -225,7 +226,7 @@
       <Value Key="StartZoomAdjust" Value="2" Type="Number" />
       <Value Key="Text" Value="This is a new sexy Timeline" Type="String" />
     </Entity>
-    <Entity AssignmentObjectType="Default" AttributeSetStaticName="06ba7809-5669-41b9-966b-3623127f6952" AttributeSetName="Timeline Entry" EntityGUID="da965caf-3b1d-42b0-bda5-57d147bbb757">
+    <Entity AssignmentObjectType="Default" AttributeSetStaticName="06ba7809-5669-41b9-966b-3623127f6952" AttributeSetName="TimelineEntry" EntityGUID="da965caf-3b1d-42b0-bda5-57d147bbb757">
       <Value Key="Body" Value="Our first timeline entry" Type="String" />
       <Value Key="EndDate" Value="2014-05-22T00:00:00" Type="DateTime" />
       <Value Key="Headline" Value="Our first timeline entry" Type="String" />
@@ -241,7 +242,7 @@
       <Value Key="StartZoomAdjust" Value="1" Type="Number" />
       <Value Key="Text" Value="Once upon a time, &lt;a href=&quot;http://www.2sic.com/&quot; target=&quot;_blank&quot;&gt;2sic&lt;/a&gt; demonstrated how easy it is to create Apps for DNN. Much easier than creating modules. &lt;a href=&quot;timeline.knightlab.com&quot; target=&quot;_blank&quot;&gt;TimelineJS&lt;/a&gt; was used for the demo, and it took us about 3 hours to create it.&amp;nbsp;" Type="String" />
     </Entity>
-    <Entity AssignmentObjectType="Default" AttributeSetStaticName="06ba7809-5669-41b9-966b-3623127f6952" AttributeSetName="Timeline Entry" EntityGUID="48ad96bd-ebf7-4497-8849-9afe83803db5">
+    <Entity AssignmentObjectType="Default" AttributeSetStaticName="06ba7809-5669-41b9-966b-3623127f6952" AttributeSetName="TimelineEntry" EntityGUID="48ad96bd-ebf7-4497-8849-9afe83803db5">
       <Value Key="Body" Value="" Type="String" />
       <Value Key="EndDate" Value="1999-01-01T00:00:00" Type="DateTime" />
       <Value Key="Headline" Value="The birth of 2sic Internet Solutions in Switzerland" Type="String" />
@@ -250,7 +251,7 @@
       <Value Key="MediaCredit" Value="" Type="String" />
       <Value Key="StartDate" Value="1999-01-01T00:00:00" Type="DateTime" />
     </Entity>
-    <Entity AssignmentObjectType="Default" AttributeSetStaticName="06ba7809-5669-41b9-966b-3623127f6952" AttributeSetName="Timeline Entry" EntityGUID="721b4fa7-f96f-4404-87e1-2ab36d82594c">
+    <Entity AssignmentObjectType="Default" AttributeSetStaticName="06ba7809-5669-41b9-966b-3623127f6952" AttributeSetName="TimelineEntry" EntityGUID="721b4fa7-f96f-4404-87e1-2ab36d82594c">
       <Value Key="Body" Value="" Type="String" />
       <Value Key="EndDate" Value="2003-02-02T00:00:00" Type="DateTime" />
       <Value Key="Headline" Value="DotNetNuke is born" Type="String" />
@@ -259,7 +260,7 @@
       <Value Key="MediaCredit" Value="" Type="String" />
       <Value Key="StartDate" Value="2003-02-02T00:00:00" Type="DateTime" />
     </Entity>
-    <Entity AssignmentObjectType="Default" AttributeSetStaticName="06ba7809-5669-41b9-966b-3623127f6952" AttributeSetName="Timeline Entry" EntityGUID="996040ea-4dd4-40b2-b6a8-8273f4534819">
+    <Entity AssignmentObjectType="Default" AttributeSetStaticName="06ba7809-5669-41b9-966b-3623127f6952" AttributeSetName="TimelineEntry" EntityGUID="996040ea-4dd4-40b2-b6a8-8273f4534819">
       <Value Key="Body" Value="&lt;p&gt;A milestone event...&lt;/p&gt;" Type="String" />
       <Value Key="EndDate" Value="2012-01-05T00:00:00" Type="DateTime" />
       <Value Key="Headline" Value="2sxc was created and released as Open Source" Type="String" />
@@ -268,7 +269,7 @@
       <Value Key="MediaCredit" Value="" Type="String" />
       <Value Key="StartDate" Value="2012-01-05T00:00:00" Type="DateTime" />
     </Entity>
-    <Entity AssignmentObjectType="Default" AttributeSetStaticName="06ba7809-5669-41b9-966b-3623127f6952" AttributeSetName="Timeline Entry" EntityGUID="83f05597-21e0-4440-bbd1-305ae98ff0a3">
+    <Entity AssignmentObjectType="Default" AttributeSetStaticName="06ba7809-5669-41b9-966b-3623127f6952" AttributeSetName="TimelineEntry" EntityGUID="83f05597-21e0-4440-bbd1-305ae98ff0a3">
       <Value Key="Body" Value="&lt;p&gt;A revolutionary step which will brings the dream of no-side-effects modules to DNN.&amp;nbsp;&lt;/p&gt;" Type="String" />
       <Value Key="EndDate" Value="2014-05-01T00:00:00" Type="DateTime" />
       <Value Key="Headline" Value="2sxc Version 6 released with Apps" Type="String" />
@@ -277,22 +278,56 @@
       <Value Key="MediaCredit" Value="" Type="String" />
       <Value Key="StartDate" Value="2014-05-01T00:00:00" Type="DateTime" />
     </Entity>
-    <Entity AssignmentObjectType="Default" AttributeSetStaticName="2SexyContent-Template" AttributeSetName="2SexyContent-Template" EntityGUID="69475b7d-c6ff-425c-8761-cbca61aa16cb">
+    <Entity AssignmentObjectType="Default" AttributeSetStaticName="2SexyContent-Template" AttributeSetName="2SexyContent-Template" EntityGUID="69475b7d-c6ff-425c-8761-cbca61aa16cb" Json="True">
       <Value Key="ContentDemoEntity" Value="f5b2a532-fa2d-4e0d-9e9b-75101f3567d5" Type="Entity" />
       <Value Key="ContentTypeStaticName" Value="06ba7809-5669-41b9-966b-3623127f6952" Type="String" />
+      <Value Key="Icon" Value="" Type="Hyperlink" />
+      <Value Key="Identifier" Value="" Type="String" />
       <Value Key="IsHidden" Value="False" Type="Boolean" />
       <Value Key="ListContentDemoEntity" Value="3301edc5-ab2c-4c79-b2c1-2fbc38ebacd4" Type="Entity" />
       <Value Key="ListContentTypeStaticName" Value="c91b95cb-8001-4f51-a73d-e9b83a3c2669" Type="String" />
       <Value Key="ListPresentationTypeStaticName" Value="" Type="String" />
-      <Value Key="Location" Value="Portal File System" Type="String" />
+      <Value Key="Location" Value="Site" Type="String" />
       <Value Key="Name" Value="Timeline" Type="String" />
-      <Value Key="Path" Value="Timeline.html" Type="String" />
+      <Value Key="Path" Value="_Timeline.cshtml" Type="String" />
       <Value Key="PresentationTypeStaticName" Value="" Type="String" />
       <Value Key="PublishData" Value="True" Type="Boolean" />
+      <Value Key="SearchIndexingDisabled" Value="False" Type="Boolean" />
+      <Value Key="SearchIndexingStreams" Value="" Type="String" />
       <Value Key="StreamsToPublish" Value="Default,ListContent" Type="String" />
-      <Value Key="Type" Value="Token" Type="String" />
+      <Value Key="Type" Value="C# Razor" Type="String" />
       <Value Key="UseForList" Value="True" Type="Boolean" />
+      <Value Key="ViewController" Value="" Type="String" />
       <Value Key="ViewNameInUrl" Value="" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="Default" AttributeSetStaticName="2SexyContent-ContentGroup" AttributeSetName="2SexyContent-ContentGroup" EntityGUID="c254b90b-3711-4e5e-9bb8-05d8920095fc" Json="True">
+      <Value Key="Content" Value="null,null" Type="Entity" />
+      <Value Key="ListContent" Value="null" Type="Entity" />
+      <Value Key="ListPresentation" Value="null" Type="Entity" />
+      <Value Key="Presentation" Value="null,null" Type="Entity" />
+      <Value Key="Template" Value="69475b7d-c6ff-425c-8761-cbca61aa16cb" Type="Entity" />
+    </Entity>
+    <Entity AssignmentObjectType="Default" AttributeSetStaticName="DataPipeline" AttributeSetName="DataPipeline" EntityGUID="3528abef-9847-4679-be0b-1daa4cc8e574" Json="True">
+      <Value Key="AllowEdit" Value="True" Type="Boolean" />
+      <Value Key="Description" Value="" Type="String" />
+      <Value Key="Name" Value="ModuleData" Type="String" />
+      <Value Key="Params" Value="" Type="String" />
+      <Value Key="StreamsOut" Value="" Type="String" />
+      <Value Key="StreamWiring" Value="5ceb334b-fe63-4666-bc46-9cadb2e62195:Header&gt;Out:Header&#xD;&#xA;5ceb334b-fe63-4666-bc46-9cadb2e62195:Default&gt;Out:Default" Type="String" />
+      <Value Key="TestParameters" Value="" Type="String" />
+      <Value Key="VisualDesignerData" Value="" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="Entity" AttributeSetStaticName="DataPipelinePart" AttributeSetName="DataPipelinePart" EntityGUID="5ceb334b-fe63-4666-bc46-9cadb2e62195" Json="True" KeyGuid="3528abef-9847-4679-be0b-1daa4cc8e574">
+      <Value Key="Description" Value="" Type="String" />
+      <Value Key="Name" Value="CMS Block" Type="String" />
+      <Value Key="PartAssemblyAndType" Value="ToSic.Sxc.DataSources.CmsBlock, ToSic.Sxc" Type="String" />
+      <Value Key="VisualDesignerData" Value="{&#xD;&#xA;  &quot;Top&quot;: 170,&#xD;&#xA;  &quot;Left&quot;: 440&#xD;&#xA;}" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="Entity" AttributeSetStaticName="PermissionConfiguration" AttributeSetName="PermissionConfiguration" EntityGUID="65ee55d2-bc0a-4cf6-aa03-768bd68b6fcf" Json="True" KeyGuid="3528abef-9847-4679-be0b-1daa4cc8e574">
+      <Value Key="Condition" Value="SecurityAccessLevel.View" Type="String" />
+      <Value Key="Grant" Value="r" Type="String" />
+      <Value Key="Identity" Value="" Type="String" />
+      <Value Key="Title" Value="Security Rule" Type="String" />
     </Entity>
   </Entities>
   <PortalFiles>
@@ -301,6 +336,6 @@
   </PortalFiles>
   <PortalFolders>
     <Folder Id="361" RelativePath="Smileys/" />
-    <Folder Id="363" RelativePath="adam/TimelineJS/" />
+    <Folder Id="13636" RelativePath="adam/TimelineJs2/" />
   </PortalFolders>
 </SexyContent>

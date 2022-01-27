@@ -17,4 +17,10 @@
 
 <link rel="stylesheet" type="text/css" href="@App.Path/dist/styles.min.css"/>
 <script type="text/javascript" src="@App.Path/dist/scripts.min.js"></script>
-<turnOn turn-on='{ "run": "window.appTimelineJs2.init()", "data": { "domAttribute": "@DynamicModel.DomAttribute", "moduleId": "@CmsContext.Module.Id" }}'></turnOn>
+<turnOn turn-on='{ 
+  "run": "window.appTimelineJs2.init()", 
+  "data": { 
+    "domAttribute": "@DynamicModel.DomAttribute", 
+    "moduleId": "@CmsContext.Module.Id" 
+  }}'>
+</turnOn>

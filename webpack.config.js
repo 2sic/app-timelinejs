@@ -22,7 +22,7 @@ module.exports = {
     assets: true,
   },
   resolve: {
-    extensions: [".ts", ".less", ".css"]
+    extensions: ['.ts', ".js", ".less", ".css"]
   },
   optimization: {
     minimize: true,
@@ -92,6 +92,13 @@ module.exports = {
             }
           },
         ],
+      },
+      {
+        test: /\.ts$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'ts-loader'
+        }
       },
       {
         test: /\.(png|jpe?g|gif|woff(2)?|ttf|eot|svg)$/,

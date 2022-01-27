@@ -16,8 +16,9 @@ CMS Slider App using the popular [Swiper JS](https://swiperjs.com/). It does not
 | Source & License    | ✅    | included, MIT
 | App Catalog         | ✅    | See [app catalog](https://2sxc.org/en/apps/app/timelinejs-v2-hybrid-for-dnn-and-oqtane)
 | Best Practices      | ✅    | Uses v12.05 conventions
-| Bootstrap 4         | ✅    | v4 optimized
-| Bootstrap 5         | ✅    | v5 optimized
+| Bootstrap 3         | ✔️    | Works with BS3
+| Bootstrap 4         | ✔️    | Works with BS4
+| Bootstrap 5         | ✔️    | Works with BS5
 
 ## Customize the App
 
@@ -35,3 +36,4 @@ If you want to customize the CSS, you will usually follow the ["Create Custom St
   * made hybrid / compatible with Oqtane
   * removed jQuery
   * updated to timelinejs v3
+  * switched to typescript

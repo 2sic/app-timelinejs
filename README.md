@@ -37,3 +37,4 @@ If you want to customize the CSS, you will usually follow the ["Create Custom St
   * removed jQuery
   * updated to timelinejs v3
   * switched to typescript
+  * enabled data-optimizations

@@ -54,12 +54,14 @@ function getTimelineData(moduleId: string, content: any, listContent: any) {
   let isEditMode = $2sxc(moduleId).isEditMode();
 
   if (isEditMode) {
+    console.log(listContent)
     let listToolbar = $2sxc(moduleId).manage.getToolbar({
-      entity: listContent,
+      entityId: listContent.Id,
       action: "edit"
     });
     listContent.Text += listToolbar;
   }
+
 
   return {
     title: {
@@ -77,10 +79,13 @@ function getTimelineData(moduleId: string, content: any, listContent: any) {
     },
     events: content.map((event: any) => {
       if (isEditMode) {
-        var toolbar = $2sxc(moduleId).manage.getToolbar([
-          { entity: event, action: "edit" },
-          { entity: event, action: "new" },
-        ]);
+        console.log(moduleId)
+        console.log(event)
+        let toolbar = $2sxc(moduleId).manage.getToolbar({ 
+          entityId: event.Id,
+          action: "new,edit" 
+        });
+        console.log(toolbar)
         event.Body += toolbar;
       }
       return {

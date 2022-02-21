@@ -74,7 +74,6 @@ function getTimelineData(moduleId: string, content: any, listContent: any) {
   let isEditMode = $2sxc(moduleId).isEditMode();
 
   if (isEditMode) {
-    console.log(listContent)
     let listToolbar = $2sxc(moduleId).manage.getToolbar({
       entityId: listContent.Id,
       action: "edit"

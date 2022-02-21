@@ -1,6 +1,6 @@
 ﻿@import '/node_modules/@knight-lab/timelinejs/dist/css/timeline.css';
 
-.app-timelinejs2 {
+.tl-timeline {
   width: 100%;
-  height: 500px; 
+  height: 500px;
 }

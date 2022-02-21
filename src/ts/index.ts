@@ -2,6 +2,8 @@ let { Timeline } = require('../../node_modules/@knight-lab/timelinejs');
 
 declare const $2sxc: any;
 var winAny = window as any;
+winAny.appTimelineJs2 = winAny.appTimelineJs2 || {};
+winAny.appTimelineJs2.toolbars = {};
 
 function init({ domAttribute, moduleId }: { domAttribute: string, moduleId: string}) {
   const sxc = $2sxc(moduleId);
@@ -44,8 +46,26 @@ function init({ domAttribute, moduleId }: { domAttribute: string, moduleId: stri
       // Create the timeline
       new Timeline(timeLineElement, timelineData, timelineOptions);
 
-      // add sc-element classes
-      timeLineElement.querySelectorAll(`.tl-slide-content-container`).forEach((el) => { el.classList.add("sc-element"); });
+
+      setTimeout(() => {
+        // Replace toolbar, since they are removed by the timelinejs library
+        timeLineElement.querySelectorAll(".sxc-js-toolbar")
+          .forEach((toolbar) => {
+            const sxcToolbar = winAny.appTimelineJs2.toolbars[`${toolbar.id}-${moduleId}`];
+            toolbar.innerHTML = sxcToolbar
+            
+            // Add Mutation to replace toolbar after sxc action
+            let timelineObserver = new window.MutationObserver(() => {
+              toolbar.innerHTML = sxcToolbar;
+            });
+
+            timelineObserver.observe(toolbar, {
+              childList: true,
+              characterData: true,
+              subtree: true
+            });
+          });
+      }, 500)
     });
 }
 
@@ -62,47 +82,38 @@ function getTimelineData(moduleId: string, content: any, listContent: any) {
     listContent.Text += listToolbar;
   }
 
-
   return {
     title: {
       text: {
-        headline: listContent.Title,
+        headline: listContent.Headline,
         text: listContent.Text
       },
-      start_date: {
-        year: setDate(listContent.StartDate)
-      },
-      end_date: { 
-        year: setDate(listContent.EndDate) 
-      },
+      start_date: getTimelineDate(listContent.StartDate),
+      end_date: getTimelineDate(listContent.EndDate),
       unique_id: `app-timelinejs2-${moduleId}`
     },
     events: content.map((event: any) => {
       if (isEditMode) {
-        console.log(moduleId)
-        console.log(event)
-        let toolbar = $2sxc(moduleId).manage.getToolbar({ 
-          entityId: event.Id,
-          action: "new,edit" 
-        });
-        console.log(toolbar)
-        event.Body += toolbar;
+        let toolbar = $2sxc(moduleId).manage.getToolbar([
+          { entityId: event.Id, action: "edit" },
+          { entity: event, action: "new" },
+          { entity: event, action: "remove" },
+        ]);
+
+        event.Body += addSxcToolbar(toolbar, moduleId).outerHTML;
       }
+
       return {
-        start_date: {
-          year: setDate(event.StartDate)
-        },
-        end_date: { 
-          year: setDate(event.EndDate)
-        },
+        start_date: getTimelineDate(event.StartDate),
+        end_date: getTimelineDate(event.EndDate),
         text: {
           headline: event.Headline,
-          text: event.Body
+          text: event.Body,
         },
         media: {
           url: event.Media,
           caption: event.MediaCaption,
-          credit: event.MediaCredit
+          credit: event.MediaCredit,
         },
         unique_id: `app-timelinejs2-${moduleId}`
       };
@@ -110,9 +121,26 @@ function getTimelineData(moduleId: string, content: any, listContent: any) {
   };
 }
 
-function setDate(date: string) {
-  return new Date(date).getFullYear() ?? null
+function getTimelineDate(date: Date) {
+  return {
+    year: new Date(date).getFullYear() ?? null,
+    month: new Date(date).getMonth() + 1 ?? null,
+    day: new Date(date).getDate() ?? null,
+  }
 }
 
-winAny.appTimelineJs2 = winAny.appTimelineJs2 || {};
+function addSxcToolbar(toolbar: string, moduleId: string) {
+  let jsToolbar = new DOMParser().parseFromString(toolbar, 'text/html').querySelector("ul");
+  const toolbarId = jsToolbar.getAttribute("toolbar-identifier");
+  jsToolbar.id = toolbarId;
+  winAny.appTimelineJs2.toolbars[toolbarId + "-" + moduleId] = jsToolbar.outerHTML;
+
+  const toolbarWrapper = document.createElement("div");
+  toolbarWrapper.id = toolbarId;
+  toolbarWrapper.innerHTML = jsToolbar.outerHTML;
+  toolbarWrapper.classList.add("sxc-js-toolbar");
+
+  return toolbarWrapper;
+}
+
 winAny.appTimelineJs2.init = winAny.appTimelineJs2.init || init;

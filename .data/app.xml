@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="13.02.00" ExportDate="2022-01-28T16:52:51.4009208+01:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="13.02.00" ExportDate="2022-02-21T13:45:51.5589211+01:00">
   <Header>
     <App Guid="5ec60d62-9ff6-4850-a9fe-e196fefe2a25" />
     <Language Default="en-us" />
@@ -630,140 +630,102 @@
     <Entity TargetType="3" AssignmentObjectType="App" AttributeSetStaticName="App-Settings" AttributeSetName="App-Settings" EntityGUID="c45c4651-96d9-4717-9f2b-5892994a6279" KeyNumber="24" />
     <Entity TargetType="3" AssignmentObjectType="App" AttributeSetStaticName="App-Resources" AttributeSetName="App-Resources" EntityGUID="d4798585-e2bd-4f54-960f-7ce4b8057298" KeyNumber="24" />
     <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="06ba7809-5669-41b9-966b-3623127f6952" AttributeSetName="TimelineEntry" EntityGUID="f5b2a532-fa2d-4e0d-9e9b-75101f3567d5">
-      <Value Key="Body" Value="Body" Type="String" />
-      <Value Key="EndDate" Value="2014-05-15T00:00:00" Type="DateTime" />
-      <Value Key="Headline" Value="New Timeline Entry" Type="String" />
-      <Value Key="Media" Value="file:439" Type="Hyperlink" />
-      <Value Key="MediaCaption" Value="Chrysanthemum" Type="String" />
-      <Value Key="MediaCredit" Value="© Microsoft Corporation" Type="String" />
-      <Value Key="StartDate" Value="2014-05-15T00:00:00" Type="DateTime" />
+      <Value Key="Body" Value="&lt;p&gt;Description of the Timeline entry&lt;/p&gt;" Type="String">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
+      <Value Key="EndDate" Value="2022-02-21T00:00:00" Type="DateTime">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
+      <Value Key="Headline" Value="New Timeline Entry" Type="String">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
+      <Value Key="Media" Value="file:6122" Type="Hyperlink">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
+      <Value Key="MediaCaption" Value="Timeline image" Type="String">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
+      <Value Key="MediaCredit" Value="© 2sic internet solutions gmbh" Type="String">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
+      <Value Key="StartDate" Value="2022-02-21T00:00:00" Type="DateTime">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
     </Entity>
     <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="c91b95cb-8001-4f51-a73d-e9b83a3c2669" AttributeSetName="Timeline Settings" EntityGUID="3301edc5-ab2c-4c79-b2c1-2fbc38ebacd4">
-      <Value Key="Headline" Value="New Timeline" Type="String" />
-      <Value Key="StartDate" Value="2014-05-15T00:00:00" Type="DateTime" />
-      <Value Key="Text" Value="Description of the new timeline" Type="String" />
-    </Entity>
-    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="c91b95cb-8001-4f51-a73d-e9b83a3c2669" AttributeSetName="Timeline Settings" EntityGUID="fb8623f1-01da-47e4-87d2-1e0a365b3848">
-      <Value Key="Headline" Value="2sic internet solutions" Type="String" />
-      <Value Key="StartDate" Value="2014-05-11T00:00:00" Type="DateTime" />
-      <Value Key="Text" Value="Our &lt;strong&gt;history&lt;/strong&gt;" Type="String" />
-    </Entity>
-    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="06ba7809-5669-41b9-966b-3623127f6952" AttributeSetName="TimelineEntry" EntityGUID="eb92b706-9002-4fbe-bfe6-01d9738ea2b7">
-      <Value Key="Body" Value="&lt;p&gt;something happened!&lt;/p&gt;" Type="String" />
-      <Value Key="EndDate" Value="2014-05-19T00:00:00" Type="DateTime" />
-      <Value Key="Headline" Value="test daniel" Type="String" />
-      <Value Key="Media" Value="http://youtu.be/UXmcSUVcnPw" Type="Hyperlink" />
-      <Value Key="MediaCaption" Value="Great video!" Type="String" />
-      <Value Key="MediaCredit" Value="2sic" Type="String" />
-      <Value Key="StartDate" Value="2014-05-18T00:00:00" Type="DateTime" />
-    </Entity>
-    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="06ba7809-5669-41b9-966b-3623127f6952" AttributeSetName="TimelineEntry" EntityGUID="557676e8-53ec-43de-8f91-6ba3c8da530e">
-      <Value Key="Body" Value="2SexyContent 06.00.06 released" Type="String" />
-      <Value Key="EndDate" Value="2014-05-16T00:00:00" Type="DateTime" />
-      <Value Key="Headline" Value="2SexyContent 06.00.07 released" Type="String" />
-      <Value Key="Media" Value="https://maps.google.com/maps?t=m&amp;sll=45.4158,10.6067&amp;sspn=0.005784,0.0109864&amp;q=Agriturismo+Feliciana&amp;cid=0xfa2f4b3e537f2162&amp;output=classic&amp;dg=opt" Type="Hyperlink" />
-      <Value Key="MediaCaption" Value="Windows Hintergrundbild" Type="String" />
-      <Value Key="MediaCredit" Value="© Microsoft" Type="String" />
-      <Value Key="StartDate" Value="2014-05-16T00:00:00" Type="DateTime" />
-    </Entity>
-    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="06ba7809-5669-41b9-966b-3623127f6952" AttributeSetName="TimelineEntry" EntityGUID="450042f8-1e62-4ba9-a9f8-8792b77f6f92">
-      <Value Key="Body" Value="DotNetNuke on Wikipedia" Type="String" />
-      <Value Key="EndDate" Value="2014-05-26T00:00:00" Type="DateTime" />
-      <Value Key="Headline" Value="DotNetNuke" Type="String" />
-      <Value Key="Media" Value="http://en.wikipedia.org/wiki/DotNetNuke" Type="Hyperlink" />
-      <Value Key="MediaCaption" Value="" Type="String" />
-      <Value Key="MediaCredit" Value="" Type="String" />
-      <Value Key="StartDate" Value="2014-05-23T00:00:00" Type="DateTime" />
-    </Entity>
-    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="06ba7809-5669-41b9-966b-3623127f6952" AttributeSetName="TimelineEntry" EntityGUID="88d19b4b-a16b-4a4d-b9d4-6cd2b3d5d21c">
-      <Value Key="Body" Value="&lt;p&gt;New 2SexyContent version!&lt;/p&gt;" Type="String" />
-      <Value Key="EndDate" Value="2014-05-23T00:00:00" Type="DateTime" />
-      <Value Key="Headline" Value="Test new Timeline Entry 16:39 2rm" Type="String" />
-      <Value Key="Media" Value="file:440" Type="Hyperlink" />
-      <Value Key="MediaCaption" Value="" Type="String" />
-      <Value Key="MediaCredit" Value="" Type="String" />
-      <Value Key="StartDate" Value="2014-05-21T00:00:00" Type="DateTime" />
-    </Entity>
-    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="c91b95cb-8001-4f51-a73d-e9b83a3c2669" AttributeSetName="Timeline Settings" EntityGUID="3b8d03d4-1534-40d0-89b9-5c9f955495cd">
-      <Value Key="Headline" Value="Sexy Timeline" Type="String" />
-      <Value Key="StartAtSlide" Value="0" Type="Number" />
-      <Value Key="StartDate" Value="2014-05-21T00:00:00" Type="DateTime" />
-      <Value Key="StartZoomAdjust" Value="2" Type="Number" />
-      <Value Key="Text" Value="This is a new sexy Timeline" Type="String" />
-    </Entity>
-    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="06ba7809-5669-41b9-966b-3623127f6952" AttributeSetName="TimelineEntry" EntityGUID="da965caf-3b1d-42b0-bda5-57d147bbb757">
-      <Value Key="Body" Value="Our first timeline entry" Type="String" />
-      <Value Key="EndDate" Value="2014-05-22T00:00:00" Type="DateTime" />
-      <Value Key="Headline" Value="Our first timeline entry" Type="String" />
-      <Value Key="Media" Value="" Type="Hyperlink" />
-      <Value Key="MediaCaption" Value="" Type="String" />
-      <Value Key="MediaCredit" Value="" Type="String" />
-      <Value Key="StartDate" Value="2014-05-22T00:00:00" Type="DateTime" />
-    </Entity>
-    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="c91b95cb-8001-4f51-a73d-e9b83a3c2669" AttributeSetName="Timeline Settings" EntityGUID="745f735c-235d-4762-b3e9-639616dfcb46">
-      <Value Key="Headline" Value="2sxc TimelineJS Demo" Type="String" />
-      <Value Key="StartAtSlide" Value="0" Type="Number" />
-      <Value Key="StartDate" Value="2014-05-21T00:00:00" Type="DateTime" />
-      <Value Key="StartZoomAdjust" Value="1" Type="Number" />
-      <Value Key="Text" Value="Once upon a time, &lt;a href=&quot;http://www.2sic.com/&quot; target=&quot;_blank&quot;&gt;2sic&lt;/a&gt; demonstrated how easy it is to create Apps for DNN. Much easier than creating modules. &lt;a href=&quot;timeline.knightlab.com&quot; target=&quot;_blank&quot;&gt;TimelineJS&lt;/a&gt; was used for the demo, and it took us about 3 hours to create it.&amp;nbsp;" Type="String" />
-    </Entity>
-    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="06ba7809-5669-41b9-966b-3623127f6952" AttributeSetName="TimelineEntry" EntityGUID="48ad96bd-ebf7-4497-8849-9afe83803db5">
-      <Value Key="Body" Value="" Type="String" />
-      <Value Key="EndDate" Value="1999-01-01T00:00:00" Type="DateTime" />
-      <Value Key="Headline" Value="The birth of 2sic Internet Solutions in Switzerland" Type="String" />
-      <Value Key="Media" Value="http://www.2sic.com/" Type="Hyperlink" />
-      <Value Key="MediaCaption" Value="" Type="String" />
-      <Value Key="MediaCredit" Value="" Type="String" />
-      <Value Key="StartDate" Value="1999-01-01T00:00:00" Type="DateTime" />
-    </Entity>
-    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="06ba7809-5669-41b9-966b-3623127f6952" AttributeSetName="TimelineEntry" EntityGUID="721b4fa7-f96f-4404-87e1-2ab36d82594c">
-      <Value Key="Body" Value="" Type="String" />
-      <Value Key="EndDate" Value="2003-02-02T00:00:00" Type="DateTime" />
-      <Value Key="Headline" Value="DotNetNuke is born" Type="String" />
-      <Value Key="Media" Value="http://www.dnnsoftware.com/" Type="Hyperlink" />
-      <Value Key="MediaCaption" Value="" Type="String" />
-      <Value Key="MediaCredit" Value="" Type="String" />
-      <Value Key="StartDate" Value="2003-02-02T00:00:00" Type="DateTime" />
-    </Entity>
-    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="06ba7809-5669-41b9-966b-3623127f6952" AttributeSetName="TimelineEntry" EntityGUID="996040ea-4dd4-40b2-b6a8-8273f4534819">
-      <Value Key="Body" Value="&lt;p&gt;A milestone event...&lt;/p&gt;" Type="String" />
-      <Value Key="EndDate" Value="2012-01-05T00:00:00" Type="DateTime" />
-      <Value Key="Headline" Value="2sxc was created and released as Open Source" Type="String" />
-      <Value Key="Media" Value="http://youtu.be/NOl7IiPVZv0" Type="Hyperlink" />
-      <Value Key="MediaCaption" Value="" Type="String" />
-      <Value Key="MediaCredit" Value="" Type="String" />
-      <Value Key="StartDate" Value="2012-01-05T00:00:00" Type="DateTime" />
-    </Entity>
-    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="06ba7809-5669-41b9-966b-3623127f6952" AttributeSetName="TimelineEntry" EntityGUID="83f05597-21e0-4440-bbd1-305ae98ff0a3">
-      <Value Key="Body" Value="&lt;p&gt;A revolutionary step which will brings the dream of no-side-effects modules to DNN.&amp;nbsp;&lt;/p&gt;" Type="String" />
-      <Value Key="EndDate" Value="2014-05-01T00:00:00" Type="DateTime" />
-      <Value Key="Headline" Value="2sxc Version 6 released with Apps" Type="String" />
-      <Value Key="Media" Value="http://2sexycontent.org/Portals/0/Apps/App-Icon.png?w=100&amp;h=100&amp;mode=crop&amp;s.roundcorners=20" Type="Hyperlink" />
-      <Value Key="MediaCaption" Value="" Type="String" />
-      <Value Key="MediaCredit" Value="" Type="String" />
-      <Value Key="StartDate" Value="2014-05-01T00:00:00" Type="DateTime" />
+      <Value Key="Headline" Value="New Timeline" Type="String">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
+      <Value Key="StartAtSlide" Value="0" Type="Number">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
+      <Value Key="StartDate" Value="2021-12-23T00:00:00" Type="DateTime">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
+      <Value Key="StartZoomAdjust" Value="2" Type="Number">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
+      <Value Key="Text" Value="Description of the new timeline" Type="String">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
     </Entity>
     <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="2SexyContent-Template" AttributeSetName="2SexyContent-Template" EntityGUID="69475b7d-c6ff-425c-8761-cbca61aa16cb" Json="True">
       <Value Key="ContentDemoEntity" Value="f5b2a532-fa2d-4e0d-9e9b-75101f3567d5" Type="Entity" />
-      <Value Key="ContentTypeStaticName" Value="06ba7809-5669-41b9-966b-3623127f6952" Type="String" />
-      <Value Key="Icon" Value="" Type="Hyperlink" />
-      <Value Key="Identifier" Value="" Type="String" />
-      <Value Key="IsHidden" Value="False" Type="Boolean" />
+      <Value Key="ContentTypeStaticName" Value="06ba7809-5669-41b9-966b-3623127f6952" Type="String">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
+      <Value Key="Icon" Value="" Type="Hyperlink">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
+      <Value Key="Identifier" Value="" Type="String">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
+      <Value Key="IsHidden" Value="False" Type="Boolean">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
       <Value Key="ListContentDemoEntity" Value="3301edc5-ab2c-4c79-b2c1-2fbc38ebacd4" Type="Entity" />
-      <Value Key="ListContentTypeStaticName" Value="c91b95cb-8001-4f51-a73d-e9b83a3c2669" Type="String" />
-      <Value Key="ListPresentationTypeStaticName" Value="" Type="String" />
-      <Value Key="Location" Value="Site" Type="String" />
-      <Value Key="Name" Value="Timeline" Type="String" />
-      <Value Key="Path" Value="_Timeline.cshtml" Type="String" />
-      <Value Key="PresentationTypeStaticName" Value="" Type="String" />
-      <Value Key="PublishData" Value="True" Type="Boolean" />
-      <Value Key="SearchIndexingDisabled" Value="False" Type="Boolean" />
-      <Value Key="SearchIndexingStreams" Value="" Type="String" />
-      <Value Key="StreamsToPublish" Value="Default,ListContent" Type="String" />
-      <Value Key="Type" Value="C# Razor" Type="String" />
-      <Value Key="UseForList" Value="True" Type="Boolean" />
-      <Value Key="ViewController" Value="" Type="String" />
-      <Value Key="ViewNameInUrl" Value="" Type="String" />
+      <Value Key="ListContentTypeStaticName" Value="c91b95cb-8001-4f51-a73d-e9b83a3c2669" Type="String">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
+      <Value Key="ListPresentationTypeStaticName" Value="" Type="String">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
+      <Value Key="Location" Value="Site" Type="String">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
+      <Value Key="Name" Value="Timeline" Type="String">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
+      <Value Key="Path" Value="_Timeline.cshtml" Type="String">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
+      <Value Key="PresentationTypeStaticName" Value="" Type="String">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
+      <Value Key="PublishData" Value="True" Type="Boolean">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
+      <Value Key="SearchIndexingDisabled" Value="False" Type="Boolean">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
+      <Value Key="SearchIndexingStreams" Value="" Type="String">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
+      <Value Key="StreamsToPublish" Value="Default,ListContent" Type="String">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
+      <Value Key="Type" Value="C# Razor" Type="String">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
+      <Value Key="UseForList" Value="True" Type="Boolean">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
+      <Value Key="ViewController" Value="" Type="String">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
+      <Value Key="ViewNameInUrl" Value="" Type="String">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
     </Entity>
     <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="2SexyContent-ContentGroup" AttributeSetName="2SexyContent-ContentGroup" EntityGUID="c254b90b-3711-4e5e-9bb8-05d8920095fc" Json="True">
       <Value Key="Content" Value="null,null" Type="Entity" />
@@ -794,13 +756,183 @@
       <Value Key="Identity" Value="" Type="String" />
       <Value Key="Title" Value="Security Rule" Type="String" />
     </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="2SexyContent-ContentGroup" AttributeSetName="2SexyContent-ContentGroup" EntityGUID="f96bfcd9-c2f5-4169-8dcf-ce31ea549e2a" Json="True">
+      <Value Key="Content" Value="null,null" Type="Entity" />
+      <Value Key="Presentation" Value="null,null" Type="Entity" />
+      <Value Key="Template" Value="69475b7d-c6ff-425c-8761-cbca61aa16cb" Type="Entity" />
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="2SexyContent-ContentGroup" AttributeSetName="2SexyContent-ContentGroup" EntityGUID="eb5290f6-331f-476a-97fd-1a056fec26f8" Json="True">
+      <Value Key="Template" Value="69475b7d-c6ff-425c-8761-cbca61aa16cb" Type="Entity" />
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="2SexyContent-ContentGroup" AttributeSetName="2SexyContent-ContentGroup" EntityGUID="a9d75775-128a-4012-9ac5-b81bca9c8e1a" Json="True">
+      <Value Key="Content" Value="b5ac9a27-1173-4faf-82bd-b63f1f3d9343,7d00f8a4-b167-47c0-8156-8b7478ca0c9e,7b071927-7041-4b64-a118-1e30385308ee,7f64ff27-8052-406d-b2c3-cc197dce6bcd" Type="Entity" />
+      <Value Key="ListContent" Value="b9406efd-bf87-4fa2-bde9-043d1a516baa" Type="Entity" />
+      <Value Key="ListPresentation" Value="null" Type="Entity" />
+      <Value Key="Presentation" Value="null,null,null,null" Type="Entity" />
+      <Value Key="Template" Value="69475b7d-c6ff-425c-8761-cbca61aa16cb" Type="Entity" />
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="c91b95cb-8001-4f51-a73d-e9b83a3c2669" AttributeSetName="Timeline Settings" EntityGUID="b9406efd-bf87-4fa2-bde9-043d1a516baa">
+      <Value Key="Headline" Value="2sxc Timeline" Type="String">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
+      <Value Key="StartAtSlide" Value="0" Type="Number">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
+      <Value Key="StartDate" Value="2021-12-24T00:00:00" Type="DateTime">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
+      <Value Key="StartZoomAdjust" Value="2" Type="Number">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
+      <Value Key="Text" Value="&lt;p&gt;Explore the most important past and future events. ;)&lt;/p&gt;" Type="String">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="06ba7809-5669-41b9-966b-3623127f6952" AttributeSetName="TimelineEntry" EntityGUID="b5ac9a27-1173-4faf-82bd-b63f1f3d9343">
+      <Value Key="Body" Value="&lt;p&gt;Du profitierst am Schnapszahl-Datum von einem 22% Rabattgutschein auf alle 2sic Leistungen. Mehr Informationen folgen am 2sday unter:&amp;nbsp;&lt;a href=&quot;https://www.2sic.com/2sday&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;2sic.com/2sday&lt;/a&gt;&lt;/p&gt;" Type="String">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
+      <Value Key="EndDate" Value="2022-02-22T00:00:00" Type="DateTime">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
+      <Value Key="Headline" Value="2sday" Type="String">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
+      <Value Key="Media" Value="file:6118" Type="Hyperlink">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
+      <Value Key="MediaCaption" Value="" Type="String">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
+      <Value Key="MediaCredit" Value="" Type="String">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
+      <Value Key="StartDate" Value="2022-02-22T00:00:00" Type="DateTime">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="06ba7809-5669-41b9-966b-3623127f6952" AttributeSetName="TimelineEntry" EntityGUID="7b071927-7041-4b64-a118-1e30385308ee">
+      <Value Key="Body" Value="&lt;p&gt;Towel Day on May 25 is an annual holiday created to celebrate author Douglas Adams by his fans. Adams wrote the classic sci-fi novel, &amp;ldquo;The Hitchhiker&amp;rsquo;s Guide to the Galaxy.&amp;rdquo; This day was organized in memory of him after he suffered a sudden heart attack at the age of 49. His fans wanted to find a way to commemorate his life&amp;rsquo;s work, and after having one towel day, its success made it a yearly event.&lt;/p&gt;" Type="String">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
+      <Value Key="EndDate" Value="2022-05-25T00:00:00" Type="DateTime">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
+      <Value Key="Headline" Value="Towel day 2022" Type="String">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
+      <Value Key="Media" Value="file:6120" Type="Hyperlink">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
+      <Value Key="MediaCaption" Value="" Type="String">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
+      <Value Key="MediaCredit" Value="" Type="String">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
+      <Value Key="StartDate" Value="2022-05-25T00:00:00" Type="DateTime">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="06ba7809-5669-41b9-966b-3623127f6952" AttributeSetName="TimelineEntry" EntityGUID="7f64ff27-8052-406d-b2c3-cc197dce6bcd">
+      <Value Key="Body" Value="&lt;p&gt;Star Wars Day is an informal commemorative day observed annually on May 4 to celebrate the Star Wars media franchise created by founder and former chairman and CEO of Lucasfilm, George Lucas. Observance of the day spread quickly through media and grassroots celebrations since the franchise began in 1977.&lt;/p&gt;" Type="String">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
+      <Value Key="EndDate" Value="2022-05-04T00:00:00" Type="DateTime">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
+      <Value Key="Headline" Value="Star Wars Day" Type="String">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
+      <Value Key="Media" Value="file:6121" Type="Hyperlink">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
+      <Value Key="MediaCaption" Value="" Type="String">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
+      <Value Key="MediaCredit" Value="" Type="String">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
+      <Value Key="StartDate" Value="2022-05-04T00:00:00" Type="DateTime">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="06ba7809-5669-41b9-966b-3623127f6952" AttributeSetName="TimelineEntry" EntityGUID="7d00f8a4-b167-47c0-8156-8b7478ca0c9e">
+      <Value Key="Body" Value="&lt;h2&gt;Major Features in 2sxc 13&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;a href=&quot;https://2sxc.org/en/blog/post/metadata-the-missing-link-in-2sxc-13&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Metadata System&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;New JavaScript APIs to talk to backend (&lt;a href=&quot;https://docs.2sxc.org/js-code/2sxc-api/sxc.data.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;data docs WIP&lt;/a&gt;&amp;nbsp;and also&amp;nbsp;&lt;a href=&quot;https://docs.2sxc.org/js-code/2sxc-api/sxc.query.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;query&lt;/a&gt;)&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&quot;https://2sxc.org/en/blog/post/webp-coming-to-a-dnn-near-you-2sxc-13-with-imageflow&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;WebP Image-Generation using ImageFlow&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&quot;https://2sxc.org/en/blog/post/visual-query-enhancements-net-standard-2-in-2sxc-13&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Major Visual Query enhancements&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&quot;https://2sxc.org/en/blog/post/vs-code-built-into-2sxc-13-monaco-editor&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;VS Code as the built-in editor&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&quot;https://2sxc.org/en/blog/post/visual-query-enhancements-net-standard-2-in-2sxc-13&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Upgraded to .net Standard 2.0 and connected to Dnn 9 Dependency Injection&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;" Type="String">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
+      <Value Key="EndDate" Value="2021-12-24T00:00:00" Type="DateTime">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
+      <Value Key="Headline" Value="Release of 2sxc 13" Type="String">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
+      <Value Key="Media" Value="file:6116" Type="Hyperlink">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
+      <Value Key="MediaCaption" Value="2sxc 13 release thumbnail" Type="String">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
+      <Value Key="MediaCredit" Value="2sxc.org" Type="String">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
+      <Value Key="StartDate" Value="2021-12-24T00:00:00" Type="DateTime">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="2SexyContent-ContentGroup" AttributeSetName="2SexyContent-ContentGroup" EntityGUID="a081a8c7-0bec-4104-b14c-df347dd7aa04" Json="True">
+      <Value Key="Content" Value="fdd6158b-30fe-4f73-98ea-28be72b2d1c2" Type="Entity" />
+      <Value Key="Presentation" Value="null" Type="Entity" />
+      <Value Key="Template" Value="69475b7d-c6ff-425c-8761-cbca61aa16cb" Type="Entity" />
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="06ba7809-5669-41b9-966b-3623127f6952" AttributeSetName="TimelineEntry" EntityGUID="fdd6158b-30fe-4f73-98ea-28be72b2d1c2">
+      <Value Key="Body" Value="&lt;p&gt;2/21/2022&lt;/p&gt;" Type="String">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
+      <Value Key="EndDate" Value="2022-02-21T00:00:00" Type="DateTime">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
+      <Value Key="Headline" Value="test" Type="String">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
+      <Value Key="Media" Value="http://2sxc.org/" Type="Hyperlink">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
+      <Value Key="MediaCaption" Value="" Type="String">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
+      <Value Key="MediaCredit" Value="" Type="String">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
+      <Value Key="StartDate" Value="2022-02-21T00:00:00" Type="DateTime">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
+    </Entity>
   </Entities>
   <PortalFiles>
-    <File Id="439" RelativePath="Smileys\crying.gif" />
-    <File Id="440" RelativePath="Smileys\embarrassed.gif" />
+    <File Id="6122" RelativePath="adam\TimelineJs2\MqWy9S36DU6em3UQHzVn1Q\Media\Platzhalterbild_Inhalt-1.jpg" />
+    <File Id="6118" RelativePath="adam\TimelineJs2\J5qstXMRr0-CvbY_Hz2TQw\Media\2sic-2sday-22022022.png" />
+    <File Id="6120" RelativePath="adam\TimelineJs2\JxkHe0FwZEuhGB4wOFMI7g\Media\towel-day.jpg" />
+    <File Id="6121" RelativePath="adam\TimelineJs2\J_9kf1KAbUCyw8wZfc5rzQ\Media\Star_Wars_Day_May_The_Fourth.svg.png" />
+    <File Id="6116" RelativePath="adam\TimelineJs2\LDSaH9e5YUSiSbJe6tw8mw\Media\2021-12-22-merry-christmas-2sxc13-is-here.jpg" />
+    <File Id="6119" RelativePath="adam\TimelineJs2\cyETLSEijEuU_fiQ8EGdlg\Media\2sic-2sday-22022022.png" />
+    <File Id="6117" RelativePath="adam\TimelineJs2\haSPrVjN4UOVi_tryVJOiA\Media\2021-12-22-merry-christmas-2sxc13-is-here.jpg" />
   </PortalFiles>
   <PortalFolders>
-    <Folder Id="361" RelativePath="Smileys/" />
+    <Folder Id="13689" RelativePath="adam/TimelineJs2/MqWy9S36DU6em3UQHzVn1Q/Media/" />
+    <Folder Id="13681" RelativePath="adam/TimelineJs2/J5qstXMRr0-CvbY_Hz2TQw/Media/" />
+    <Folder Id="13685" RelativePath="adam/TimelineJs2/JxkHe0FwZEuhGB4wOFMI7g/Media/" />
+    <Folder Id="13687" RelativePath="adam/TimelineJs2/J_9kf1KAbUCyw8wZfc5rzQ/Media/" />
+    <Folder Id="13677" RelativePath="adam/TimelineJs2/LDSaH9e5YUSiSbJe6tw8mw/Media/" />
+    <Folder Id="13683" RelativePath="adam/TimelineJs2/cyETLSEijEuU_fiQ8EGdlg/Media/" />
+    <Folder Id="13679" RelativePath="adam/TimelineJs2/haSPrVjN4UOVi_tryVJOiA/Media/" />
     <Folder Id="13636" RelativePath="adam/TimelineJs2/" />
+    <Folder Id="13682" RelativePath="adam/TimelineJs2/cyETLSEijEuU_fiQ8EGdlg/" />
+    <Folder Id="13678" RelativePath="adam/TimelineJs2/haSPrVjN4UOVi_tryVJOiA/" />
+    <Folder Id="13686" RelativePath="adam/TimelineJs2/J_9kf1KAbUCyw8wZfc5rzQ/" />
+    <Folder Id="13680" RelativePath="adam/TimelineJs2/J5qstXMRr0-CvbY_Hz2TQw/" />
+    <Folder Id="13684" RelativePath="adam/TimelineJs2/JxkHe0FwZEuhGB4wOFMI7g/" />
+    <Folder Id="13676" RelativePath="adam/TimelineJs2/LDSaH9e5YUSiSbJe6tw8mw/" />
+    <Folder Id="13688" RelativePath="adam/TimelineJs2/MqWy9S36DU6em3UQHzVn1Q/" />
   </PortalFolders>
 </SexyContent>

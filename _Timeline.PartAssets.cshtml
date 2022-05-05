@@ -15,8 +15,8 @@
   page.Activate("FontAwesome5", "turnOn", "2sxc.JsCore");
 }
 
-<link rel="stylesheet" type="text/css" href="@App.Path/dist/styles.min.css" data-enableoptimizations="true"/>
-<script type="text/javascript" src="@App.Path/dist/scripts.min.js" data-enableoptimizations="true"></script>
+<link rel="stylesheet" type="text/css" href="@App.Path/dist/styles.min.css" @(page.AssetAttributes())/>
+<script type="text/javascript" src="@App.Path/dist/scripts.min.js" @(page.AssetAttributes())></script>
 <turnOn turn-on='{ 
   "run": "window.appTimelineJs2.init()", 
   "data": { 

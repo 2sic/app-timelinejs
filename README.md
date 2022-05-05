@@ -38,3 +38,5 @@ If you want to customize the CSS, you will usually follow the ["Create Custom St
   * updated to timelinejs v3
   * switched to typescript
   * enabled data-optimizations
+* 2022-04 Version 2.01.00
+  * Replaced data-enableoptimizations with pageSvc.AssetAttributes()

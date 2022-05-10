@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="13.10.02" ExportDate="2022-05-10T12:23:50.3454149+02:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="13.10.02" ExportDate="2022-05-10T12:31:01.0748475+02:00">
   <Header>
     <App Guid="5ec60d62-9ff6-4850-a9fe-e196fefe2a25" />
     <Language Default="en-us" />
@@ -939,7 +939,7 @@
       <Value Key="ByUrlParameters" Value="False" Type="Boolean">
         <Dimension DimensionID="194" ReadOnly="false" />
       </Value>
-      <Value Key="Duration" Value="-1" Type="Number">
+      <Value Key="Duration" Value="14400" Type="Number">
         <Dimension DimensionID="194" ReadOnly="false" />
       </Value>
       <Value Key="DurationEditors" Value="300" Type="Number">
@@ -948,13 +948,13 @@
       <Value Key="DurationSystemAdmin" Value="300" Type="Number">
         <Dimension DimensionID="194" ReadOnly="false" />
       </Value>
-      <Value Key="DurationUsers" Value="14400" Type="Number">
+      <Value Key="DurationUsers" Value="-1" Type="Number">
         <Dimension DimensionID="194" ReadOnly="false" />
       </Value>
       <Value Key="IsEnabled" Value="True" Type="Boolean">
         <Dimension DimensionID="194" ReadOnly="false" />
       </Value>
-      <Value Key="Title" Value="✅ - Users 🚫, Reg 14400s, Editors 300s, SysAdmins 300s" Type="String">
+      <Value Key="Title" Value="✅ - Users 14400s, Reg 🚫, Editors 300s, SysAdmins 300s" Type="String">
         <Dimension DimensionID="194" ReadOnly="false" />
       </Value>
       <Value Key="UrlParametersCaseSensitive" Value="False" Type="Boolean">

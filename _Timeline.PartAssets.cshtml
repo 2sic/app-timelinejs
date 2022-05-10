@@ -4,19 +4,19 @@
 @{
   // 1. Get Services for Css and Page
   var pageCss = GetService<Connect.Koi.ICss>();         // Service to get CSS information about the current Theme
-  var page = GetService<IPageService>();  // Service to set titles etc. on the page
+  var pageSvc = GetService<IPageService>();  // Service to set titles etc. on the page
 
   // 2. Include Bootstrap4 if the framework isn't known
   if (pageCss.IsUnknown) {
-    page.Activate("Bootstrap4");
+    pageSvc.Activate("Bootstrap4");
   }
   
   // Activate font-Awesome 5 from the global resources and activate https://r.2sxc.org/turnon
-  page.Activate("FontAwesome5", "turnOn", "2sxc.JsCore");
+  pageSvc.Activate("FontAwesome5", "turnOn", "2sxc.JsCore");
 }
 
-<link rel="stylesheet" type="text/css" href="@App.Path/dist/styles.min.css" @(page.AssetAttributes())/>
-<script type="text/javascript" src="@App.Path/dist/scripts.min.js" @(page.AssetAttributes())></script>
+<link rel="stylesheet" type="text/css" href="@App.Path/dist/styles.min.css" @pageSvc.AssetAttributes()/>
+<script type="text/javascript" src="@App.Path/dist/scripts.min.js" @pageSvc.AssetAttributes()></script>
 <turnOn turn-on='{ 
   "run": "window.appTimelineJs2.init()", 
   "data": { 

@@ -40,3 +40,7 @@ If you want to customize the CSS, you will usually follow the ["Create Custom St
   * enabled data-optimizations
 * 2022-04 Version 2.01.00
   * Replaced data-enableoptimizations with pageSvc.AssetAttributes()
+* 2022-06 Version 02.02.00
+  * Changed all base classes to their 2sxc 14 equivalents
+  * Replaced all GetService<> with the new ServiceKit14
+  * Updated webpack

@@ -1,9 +1,5 @@
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
-const FriendlyErrorsWebpackPlugin = require("friendly-errors-webpack-plugin");
-const TerserPlugin = require("terser-webpack-plugin");
-const WebpackBar = require("webpackbar");
 
 module.exports = {
   entry: {
@@ -21,36 +17,18 @@ module.exports = {
     all: false,
     assets: true,
   },
+  cache: {
+    type: 'filesystem',
+    cacheDirectory: path.resolve(__dirname, '.temp_cache'),
+    compression: 'gzip',
+  },
   resolve: {
     extensions: ['.ts', ".js", ".less", ".css"]
-  },
-  optimization: {
-    minimize: true,
-    minimizer: [
-      new TerserPlugin({
-        terserOptions: {
-          output: {
-            comments: false,
-          },
-        },
-        extractComments: false,
-      }),
-      new OptimizeCSSAssetsPlugin({
-        cssProcessorOptions: {
-          map: {
-            inline: false,
-            annotation: true,
-          },
-        },
-      }),
-    ],
   },
   plugins: [
     new MiniCssExtractPlugin({
       filename: "[name].min.css",
     }),
-    new WebpackBar(),
-    new FriendlyErrorsWebpackPlugin(),
   ],
   module: {
     rules: [

@@ -9,7 +9,7 @@ CMS Slider App using the popular [Swiper JS](https://swiperjs.com/). It does not
 
 | Aspect              | Status | Comments or Version |
 | ------------------- | :----: | ------------------- |
-| 2sxc                | ✅    | requires 2sxc v13.10
+| 2sxc                | ✅    | requires 2sxc v16.00
 | Dnn                 | ✅    | For v7, v8 and v9
 | Oqtane 2            | ✅    | Requires v2.02
 | No jQuery           | ✅    | Since v 2.01
@@ -31,16 +31,19 @@ If you want to customize the CSS, you will usually follow the ["Create Custom St
 
 ## History
 
-* 2022-03 Version 2.00
+* v.2.00.00 2022-03
   * updated to 2sxc 12.0 standards
   * made hybrid / compatible with Oqtane
   * removed jQuery
   * updated to timelinejs v3
   * switched to typescript
   * enabled data-optimizations
-* 2022-04 Version 2.01.00
+* v.2.01.00 2022-04
   * Replaced data-enableoptimizations with pageSvc.AssetAttributes()
-* 2022-06 Version 02.02.00
+* v.02.02.00 2022-06
   * Changed all base classes to their 2sxc 14 equivalents
   * Replaced all GetService<> with the new ServiceKit14
   * Updated webpack
+* v.02.03.00 2023-05
+  * Removed _ from Filenames
+  * Replaced turnOn Tag with `Kit.Page.TurnOn`

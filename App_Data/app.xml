@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="14.09.00" ExportDate="2022-09-21T08:45:51.7751171+02:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="16.00.00" ExportDate="2023-05-03T15:30:36.0845034+02:00">
   <Header>
     <App Guid="5ec60d62-9ff6-4850-a9fe-e196fefe2a25" />
     <Language Default="en-us" />
@@ -9,13 +9,13 @@
     </Dimensions>
   </Header>
   <AttributeSets>
-    <AttributeSet StaticName="App-Resources" Name="App-Resources" Description="Stores resources like translations for an app" Scope="System.App" AlwaysShareConfiguration="false">
+    <AttributeSet StaticName="App-Resources" Name="App-Resources" Scope="System.App" AlwaysShareConfiguration="false">
       <Attributes />
     </AttributeSet>
-    <AttributeSet StaticName="App-Settings" Name="App-Settings" Description="Stores settings for an app" Scope="System.App" AlwaysShareConfiguration="false">
+    <AttributeSet StaticName="App-Settings" Name="App-Settings" Scope="System.App" AlwaysShareConfiguration="false">
       <Attributes />
     </AttributeSet>
-    <AttributeSet StaticName="c91b95cb-8001-4f51-a73d-e9b83a3c2669" Name="Timeline Settings" Description="Timeline List Settings" Scope="Default" AlwaysShareConfiguration="false">
+    <AttributeSet StaticName="c91b95cb-8001-4f51-a73d-e9b83a3c2669" Name="Timeline Settings" Scope="Default" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="Headline" Type="String" IsTitle="true">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="51dda8a4-5d39-4253-8726-756594ec9045" Json="True" KeyNumber="600">
@@ -111,7 +111,7 @@
             <Value Key="InputType" Value="wysiwyg" Type="String">
               <Dimension DimensionID="194" ReadOnly="false" />
             </Value>
-            <Value Key="RowCount" Value="1" Type="Number">
+            <Value Key="RowCount" Value="1.0" Type="Number">
               <Dimension DimensionID="194" ReadOnly="false" />
             </Value>
           </Entity>
@@ -201,7 +201,7 @@
             </Value>
           </Entity>
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Number" AttributeSetName="@Number" EntityGUID="822789b7-197f-4723-9960-bad2d215cd40" Json="True" KeyNumber="603">
-            <Value Key="Decimals" Value="0" Type="Number">
+            <Value Key="Decimals" Value="0.0" Type="Number">
               <Dimension DimensionID="194" ReadOnly="false" />
             </Value>
           </Entity>
@@ -246,14 +246,14 @@
             </Value>
           </Entity>
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Number" AttributeSetName="@Number" EntityGUID="54f0b6fe-5572-4d7c-b806-8266f4301c15" Json="True" KeyNumber="604">
-            <Value Key="Decimals" Value="0" Type="Number">
+            <Value Key="Decimals" Value="0.0" Type="Number">
               <Dimension DimensionID="194" ReadOnly="false" />
             </Value>
           </Entity>
         </Attribute>
       </Attributes>
     </AttributeSet>
-    <AttributeSet StaticName="06ba7809-5669-41b9-966b-3623127f6952" Name="TimelineEntry" Description="Timeline Entry" Scope="Default" AlwaysShareConfiguration="false">
+    <AttributeSet StaticName="06ba7809-5669-41b9-966b-3623127f6952" Name="TimelineEntry" Scope="Default" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="Headline" Type="String" IsTitle="true">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="31c9a48f-4991-4b6e-b4c3-92046c36c29f" Json="True" KeyNumber="593">
@@ -439,7 +439,7 @@
             <Value Key="InputType" Value="wysiwyg" Type="String">
               <Dimension DimensionID="194" ReadOnly="false" />
             </Value>
-            <Value Key="RowCount" Value="1" Type="Number">
+            <Value Key="RowCount" Value="1.0" Type="Number">
               <Dimension DimensionID="194" ReadOnly="false" />
             </Value>
           </Entity>
@@ -641,13 +641,13 @@
       <Value Key="RequiredOqtaneVersion" Value="03.01.00" Type="String">
         <Dimension DimensionID="194" ReadOnly="false" />
       </Value>
-      <Value Key="RequiredVersion" Value="14.09.00" Type="String">
+      <Value Key="RequiredVersion" Value="16.00.00" Type="String">
         <Dimension DimensionID="194" ReadOnly="false" />
       </Value>
       <Value Key="SupportsAjaxReload" Value="True" Type="Boolean">
         <Dimension DimensionID="194" ReadOnly="false" />
       </Value>
-      <Value Key="Version" Value="02.02.01" Type="String">
+      <Value Key="Version" Value="02.03.00" Type="String">
         <Dimension DimensionID="194" ReadOnly="false" />
       </Value>
     </Entity>
@@ -720,7 +720,7 @@
       <Value Key="Name" Value="Timeline" Type="String">
         <Dimension DimensionID="194" ReadOnly="false" />
       </Value>
-      <Value Key="Path" Value="_Timeline.cshtml" Type="String">
+      <Value Key="Path" Value="Timeline.cshtml" Type="String">
         <Dimension DimensionID="194" ReadOnly="false" />
       </Value>
       <Value Key="PresentationTypeStaticName" Value="" Type="String">
@@ -939,16 +939,16 @@
       <Value Key="ByUrlParameters" Value="False" Type="Boolean">
         <Dimension DimensionID="194" ReadOnly="false" />
       </Value>
-      <Value Key="Duration" Value="14400" Type="Number">
+      <Value Key="Duration" Value="14400.0" Type="Number">
         <Dimension DimensionID="194" ReadOnly="false" />
       </Value>
-      <Value Key="DurationEditors" Value="300" Type="Number">
+      <Value Key="DurationEditors" Value="300.0" Type="Number">
         <Dimension DimensionID="194" ReadOnly="false" />
       </Value>
-      <Value Key="DurationSystemAdmin" Value="300" Type="Number">
+      <Value Key="DurationSystemAdmin" Value="300.0" Type="Number">
         <Dimension DimensionID="194" ReadOnly="false" />
       </Value>
-      <Value Key="DurationUsers" Value="-1" Type="Number">
+      <Value Key="DurationUsers" Value="-1.0" Type="Number">
         <Dimension DimensionID="194" ReadOnly="false" />
       </Value>
       <Value Key="IsEnabled" Value="True" Type="Boolean">

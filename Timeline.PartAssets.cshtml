@@ -1,7 +1,6 @@
-@inherits Custom.Hybrid.Razor14
+@inherits Custom.Hybrid.RazorTyped
 @using ToSic.Razor.Blade;
 @{
-
   //  Include Bootstrap5 if the framework isn't known
   @Kit.Page.Activate(condition: Kit.Css.IsUnknown, features: "Bootstrap5")
   
@@ -9,14 +8,13 @@
   Kit.Page.Activate("FontAwesome5"); 
 
   var data = new {
-      domAttribute = DynamicModel.DomAttribute,
-      moduleId = CmsContext.Module.Id,
+      domAttribute = MyModel.String("timelineJsAttribute"),
+      moduleId = MyContext.Module.Id,
     };
-
 }
 
-<link rel="stylesheet" href="@CmsContext.View.Path/dist/styles.min.css" @Kit.Page.AssetAttributes()/>
-<script type="text/javascript" src="@CmsContext.View.Path/dist/scripts.min.js" @Kit.Page.AssetAttributes()></script>
+<link rel="stylesheet" href="@MyView.Path/dist/styles.min.css" @Kit.Page.AssetAttributes()/>
+<script type="text/javascript" src="@MyView.Path/dist/scripts.min.js" @Kit.Page.AssetAttributes()></script>
 
 @* Instruct turnOn to activate appTimelineJs2 with the Data is loaded - uses turnOn https://r.2sxc.org/turnon *@
 @Kit.Page.TurnOn("window.appTimelineJs2.init()", data: data)

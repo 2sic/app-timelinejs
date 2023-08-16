@@ -9,9 +9,9 @@ CMS Slider App using the popular [Swiper JS](https://swiperjs.com/). It does not
 
 | Aspect              | Status | Comments or Version |
 | ------------------- | :----: | ------------------- |
-| 2sxc                | ✅    | requires 2sxc v16.00
-| Dnn                 | ✅    | For v7, v8 and v9
-| Oqtane 2            | ✅    | Requires v2.02
+| 2sxc                | ✅    | requires 2sxc v16.02
+| Dnn                 | ✅    | For v9.6.1+
+| Oqtane 2            | ✅    | Requires v3.04+
 | No jQuery           | ✅    | Since v 2.01
 | Source & License    | ✅    | included, MIT
 | App Catalog         | ✅    | See [app catalog](https://2sxc.org/en/apps/app/timelinejs-app-v2-hybrid-for-dnn-and-oqtane)
@@ -47,3 +47,6 @@ If you want to customize the CSS, you will usually follow the ["Create Custom St
 * v.02.03.00 2023-05
   * Removed _ from Filenames
   * Replaced turnOn Tag with `Kit.Page.TurnOn`
+* v02.04.00 2023-07
+  * 2sxc 16.02 coding conventions
+  * everything typed

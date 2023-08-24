@@ -13,8 +13,8 @@
     };
 }
 
-<link rel="stylesheet" href="@MyView.Path/dist/styles.min.css" @Kit.Page.AssetAttributes()/>
-<script type="text/javascript" src="@MyView.Path/dist/scripts.min.js" @Kit.Page.AssetAttributes()></script>
+<link rel="stylesheet" href="@MyView.Folder.Url/dist/styles.min.css" @Kit.Page.AssetAttributes()/>
+<script type="text/javascript" src="@MyView.Folder.Url/dist/scripts.min.js" @Kit.Page.AssetAttributes()></script>
 
 @* Instruct turnOn to activate appTimelineJs2 with the Data is loaded - uses turnOn https://r.2sxc.org/turnon *@
 @Kit.Page.TurnOn("window.appTimelineJs2.init()", data: data)

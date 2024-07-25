@@ -50,3 +50,5 @@ If you want to customize the CSS, you will usually follow the ["Create Custom St
 * v02.04.00 2023-07
   * 2sxc 16.02 coding conventions
   * everything typed
+* v02.04.01 2024-07
+  * Add app.sln and app.csproj

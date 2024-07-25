@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="16.07.00" ExportDate="2023-09-26T09:50:10.8633783+02:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="18.00.00" ExportDate="2024-07-25T10:31:39.5352811+02:00">
   <Header>
     <App Guid="5ec60d62-9ff6-4850-a9fe-e196fefe2a25" />
     <Language Default="en-us" />
@@ -620,6 +620,9 @@
       <Value Key="AllowTokenTemplates" Value="False" Type="Boolean">
         <Dimension DimensionID="194" ReadOnly="false" />
       </Value>
+      <Value Key="DebugLog" Value="" Type="String">
+        <Dimension DimensionID="194" ReadOnly="false" />
+      </Value>
       <Value Key="Description" Value="A timeline App for creating nice timelines. It's basically a DNN-wrapper for the awesome TimelineJS" Type="String">
         <Dimension DimensionID="194" ReadOnly="false" />
       </Value>
@@ -647,7 +650,7 @@
       <Value Key="SupportsAjaxReload" Value="True" Type="Boolean">
         <Dimension DimensionID="194" ReadOnly="false" />
       </Value>
-      <Value Key="Version" Value="02.04.00" Type="String">
+      <Value Key="Version" Value="02.04.01" Type="String">
         <Dimension DimensionID="194" ReadOnly="false" />
       </Value>
     </Entity>

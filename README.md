@@ -16,8 +16,8 @@ CMS Slider App using the popular [Swiper JS](https://swiperjs.com/). It does not
 | Source & License    | ✅    | included, MIT
 | App Catalog         | ✅    | See [app catalog](https://2sxc.org/en/apps/app/timelinejs-app-v2-hybrid-for-dnn-and-oqtane)
 | Best Practices      | ✅    | Uses v13.10 conventions
-| Bootstrap 3         | ✔️    | Works with BS3
-| Bootstrap 4         | ✔️    | Works with BS4
+| Bootstrap 3         | ❌    | Last supported in v02.04.01
+| Bootstrap 4         | ❌    | Last supported in v02.04.01
 | Bootstrap 5         | ✔️    | Works with BS5
 
 ## Customize the App
@@ -30,6 +30,10 @@ If you want to customize the CSS, you will usually follow the ["Create Custom St
 [TimelineJS](https://timeline.knightlab.com/) for their awesome open-source library
 
 ## History
+
+* v02.04.02 2026-10
+  * Removed Bootstrap 3 and Bootstrap 4 support; the app is now Bootstrap 5 only
+  * For Bootstrap 3 or Bootstrap 4, use v02.04.01
 
 * v.2.00.00 2022-03
   * updated to 2sxc 12.0 standards

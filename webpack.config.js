@@ -12,7 +12,6 @@ module.exports = {
   },
   mode: "production",
   devtool: "source-map",
-  watch: true,
   stats: {
     all: false,
     assets: true,

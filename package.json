@@ -4,7 +4,8 @@
   "description": "A simple timeline",
   "main": "(none)",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "build-watch": "webpack --watch"
   },
   "author": "2sic internet solutions 2022",
   "license": "ISC",
@@ -17,6 +18,7 @@
     "postcss-loader": "^7.0.0",
     "style-loader": "^3.3.1",
     "ts-loader": "^9.3.1",
+    "typescript": "^6.0.3",
     "webpack": "^5.73.0",
     "webpack-cli": "^4.10.0"
   },

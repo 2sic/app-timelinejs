@@ -1,4 +1,5 @@
-let { Timeline } = require('../../node_modules/@knight-lab/timelinejs');
+declare const require: any;
+const { Timeline } = require('@knight-lab/timelinejs');
 
 declare const $2sxc: any;
 var winAny = window as any;
@@ -122,15 +123,17 @@ function getTimelineData(moduleId: string, content: any, listContent: any) {
 
 function getTimelineDate(date: Date) {
   return {
-    year: new Date(date).getFullYear() ?? null,
-    month: new Date(date).getMonth() + 1 ?? null,
-    day: new Date(date).getDate() ?? null,
+    year: new Date(date).getFullYear(),
+    month: new Date(date).getMonth() + 1,
+    day: new Date(date).getDate(),
   }
 }
 
 function addSxcToolbar(toolbar: string, moduleId: string) {
-  let jsToolbar = new DOMParser().parseFromString(toolbar, 'text/html').querySelector("ul");
-  const toolbarId = jsToolbar.getAttribute("toolbar-identifier");
+  const jsToolbar = new DOMParser().parseFromString(toolbar, 'text/html').querySelector("ul");
+  if (!jsToolbar) throw new Error('Could not create the TimelineJS edit toolbar.');
+
+  const toolbarId = jsToolbar.getAttribute("toolbar-identifier") ?? `app-timelinejs2-toolbar-${moduleId}`;
   jsToolbar.id = toolbarId;
   winAny.appTimelineJs2.toolbars[toolbarId + "-" + moduleId] = jsToolbar.outerHTML;
 

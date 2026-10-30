@@ -650,7 +650,7 @@
       <Value Key="SupportsAjaxReload" Value="True" Type="Boolean">
         <Dimension DimensionID="194" ReadOnly="false" />
       </Value>
-      <Value Key="Version" Value="02.04.01" Type="String">
+      <Value Key="Version" Value="02.04.02" Type="String">
         <Dimension DimensionID="194" ReadOnly="false" />
       </Value>
     </Entity>
